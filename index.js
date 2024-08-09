@@ -6,7 +6,7 @@ const app = express();
 const users = ["emr", "user2", "admin"];
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ origin: true }));
 
 app.post('/signin', (req, res) => {
   const { username } = req.body; 
