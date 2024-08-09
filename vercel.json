@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "api/signin.js": {
+        "runtime": "nodejs20.x"
+      }
+    }
+  }
