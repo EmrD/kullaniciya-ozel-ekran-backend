@@ -12,7 +12,7 @@ app.post('/signin', (req, res) => {
   const { username } = req.body; 
 
   if (users.includes(username)) {
-    res.send("giriş yapıldı");
+    res.json({ message: "giriş yapıldı" });
   } else {
     res.status(401).send("giriş yapılamadı");
   }
